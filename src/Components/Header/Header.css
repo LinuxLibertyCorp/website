@@ -1,0 +1,18 @@
+body{
+    background-color: #ffffff;
+}
+
+form{
+    width: 100%;
+    max-width: 200px;
+    margin-left: 500px;
+    display: inherit;
+    gap: 3px;
+}
+
+@media(min-width:0px) and (max-width: 1000px) {
+    form{
+        margin: 0px;
+        display: block ruby;
+    }
+}
