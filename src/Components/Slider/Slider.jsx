@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import Carousel from 'react-bootstrap/Carousel'
-import mountainImg from '/home/naddur/Projects/llc/frontend/src/Assets/mountain.jpg';
-import sunImg from '/home/naddur/Projects/llc/frontend/src/Assets/sun.jpg';
-import cityImg from '/home/naddur/Projects/llc/frontend/src/Assets/city.jpg';
+import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import mountainImg from './mountain.jpg';
+import sunImg from './sun.jpg';
+// import cityImg from './city.jpg';
+import linuxImg from './linux.jpg';
 
 export default class Slider extends Component {
   render() {
@@ -34,7 +35,9 @@ export default class Slider extends Component {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={cityImg}
+          // Make 1920 1080 photo to be full screen
+          style={{"height": "100%"}}
+          src={linuxImg}
           alt="Third slide"
         />
 
